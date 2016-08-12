@@ -5,13 +5,9 @@ import UIKit
     @IBInspectable var startColor: UIColor = UIColor.redColor()
     @IBInspectable var endColor: UIColor = UIColor.greenColor()
     
-    // ダミーデータ
-//    var graphPoints:[Int] = []
     var graphPoints:[Int] = [4, 2, 6, 4, 5, 8, 3]
     
-    var graphDays:[String] = ["8/12", "8/11", "8/10", "8/9", "8/8", "8/7", "8/6"]
-    
-    var graphDatas = [100, 30, 10, -50, 90, 12, 40]
+    var graphDays:[String] = ["8/6", "8/7", "8/8", "8/9", "8/10", "8/11", "8/12"]
     
     // グラフのプロットデータ設定用のメソッドです。
     func setupPoints(points: [Int]) {
@@ -143,9 +139,11 @@ import UIKit
         linePath.lineWidth = 1.0
         linePath.stroke()
         
+        var maxData = graphPoints.maxElement()
+        var minData = graphPoints.minElement()
         //グラフの日付
         var count = 0
-        let labelY = width - 1
+        let labelY = width - 30
         for day in graphDays {
             
             let label = UILabel()
@@ -154,7 +152,7 @@ import UIKit
             label.font = UIFont.systemFontOfSize(9)
             
             //ラベルのサイズを取得
-            let frame = CGSizeMake(250, CGFloat.max)
+            let frame = CGSizeMake(20, CGFloat.max)
             let rect = label.sizeThatFits(frame)
             
             //ラベルの位置
@@ -165,7 +163,6 @@ import UIKit
             
             count += 1
         }
-        
     }
 }
 

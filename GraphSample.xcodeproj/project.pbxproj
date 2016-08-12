@@ -12,6 +12,7 @@
 		B1A134921D5C586C0035F9D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A134901D5C586C0035F9D5 /* Main.storyboard */; };
 		B1A134941D5C586C0035F9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A134931D5C586C0035F9D5 /* Assets.xcassets */; };
 		B1A134971D5C586C0035F9D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A134951D5C586C0035F9D5 /* LaunchScreen.storyboard */; };
+		B1A1349F1D5C5A500035F9D5 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A1349E1D5C5A500035F9D5 /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B1A134931D5C586C0035F9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1A134961D5C586C0035F9D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1A134981D5C586C0035F9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A1349E1D5C5A500035F9D5 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				B1A1348C1D5C586C0035F9D5 /* AppDelegate.swift */,
 				B1A1348E1D5C586C0035F9D5 /* ViewController.swift */,
+				B1A1349E1D5C5A500035F9D5 /* GraphView.swift */,
 				B1A134901D5C586C0035F9D5 /* Main.storyboard */,
 				B1A134931D5C586C0035F9D5 /* Assets.xcassets */,
 				B1A134951D5C586C0035F9D5 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				B1A1348F1D5C586C0035F9D5 /* ViewController.swift in Sources */,
 				B1A1348D1D5C586C0035F9D5 /* AppDelegate.swift in Sources */,
+				B1A1349F1D5C5A500035F9D5 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var graphView: GraphView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        graphView.setupPoints([10,10,0,1,1,10,100])
     }
 
     override func didReceiveMemoryWarning() {
